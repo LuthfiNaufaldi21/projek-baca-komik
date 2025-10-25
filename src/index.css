@@ -1,0 +1,66 @@
+/* src/index.css */
+
+/* 1. Definisi Variabel Warna (Palet Warna) */
+:root {
+  --primary-color: #4a56e2; /* Biru/Ungu yang keren */
+  --primary-hover: #3a45c4;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555;
+  --bg-color: #f4f7f9;     /* Abu-abu yang sangat muda */
+  --surface-color: #ffffff; /* Warna "kertas" (putih) */
+  --border-color: #e0e0e0;
+}
+
+/* 2. Reset Global & Atur Font */
+body {
+  /* GUNAKAN FONT INTER YANG TADI KITA IMPOR */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color); /* Terapkan warna background */
+  color: var(--text-secondary);     /* Terapkan warna teks default */
+}
+
+/* 3. Atur Ulang Layout Konten */
+.container {
+  /* Buat lebih lebar */
+  max-width: 1100px; 
+  margin: 20px auto; 
+  padding: 24px;
+  background-color: var(--surface-color); /* Gunakan warna "kertas" */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Shadow lebih halus */
+}
+
+/* 4. Styling Teks Umum */
+h1, h2, h3 {
+  color: var(--text-primary);
+  font-weight: 600; /* Sedikit lebih tebal */
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary-color); /* Gunakan warna primer */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color); /* Gunakan warna border */
+  margin: 24px 0;
+}
+
+/* 5. Grid Daftar Komik */
+.comic-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 24px;
+}

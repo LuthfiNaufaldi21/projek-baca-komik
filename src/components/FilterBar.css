@@ -1,0 +1,70 @@
+/* src/components/FilterBar.css */
+
+.filter-bar {
+  /* Ubah dari hitam pekat ke abu-abu gelap */
+  background-color: #2e2e33; 
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  background-color: #444;
+  color: #f0f0f0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.filter-btn:hover {
+  background-color: #555;
+  transform: translateY(-1px);
+}
+
+.filter-btn span {
+  color: #aaa;
+  margin-left: 6px;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b3b41;
+  color: white;
+  font-size: 1rem;
+}
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.search-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.search-btn:hover {
+  background-color: var(--primary-hover);
+}
